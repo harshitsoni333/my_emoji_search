@@ -1,0 +1,39 @@
+.component-emoji-list-row {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    margin: 0;
+    padding: 10px;
+    height: 32px;
+    position: relative;
+}
+
+.component-emoji-list-row:hover {
+    background-color: #00a0eb;
+}
+
+.component-emoji-list-row img {
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.emoji-title {
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+}
+
+.info {
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+.component-emoji-list-row:hover .info {
+    display: inline;
+}

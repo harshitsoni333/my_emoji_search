@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Clipboard from "react-copy-to-clipboard"
+import Clipboard from "clipboard"
 
 import EmojiListRow from "./EmojiListRow"
 import "./EmojiList.css"

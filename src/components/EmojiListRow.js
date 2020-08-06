@@ -16,9 +16,9 @@ export default class EmojiListRow extends React.PureComponent {
         return(
             <div
                 className="component-emoji-list-row copy-to-clipboard"
-                data-clipboard-text="this.props.symbol"
+                data-clipboard-text={this.props.symbol}
             >
-                <img src={src} alt="this.props.title" />
+                <img src={src} alt={this.props.title} />
                 <span className="emoji-title"> {this.props.title} </span>
                 <span className="info">Click to copy emoji</span>
             </div>
