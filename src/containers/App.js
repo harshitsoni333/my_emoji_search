@@ -1,13 +1,14 @@
-import React from "react"
-
+import { connect } from "react-redux"
 import "./App.css"
-import TitleBar from "./TitleBar"
-import SearchBar from "./SearchBar"
-import EmojiList from "./EmojiList"
-import filterEmoji from "./filterEmoji"
+import EmojiList from "../components/EmojiList"
+import filterEmoji from "../components/filterEmoji"
+import React from "react"
+import SearchBar from "../components/SearchBar"
+import TitleBar from "../components/TitleBar"
 
-export default class App extends React.Component {
+class App extends React.Component {
     
+
     constructor(props) {
         super(props)
 
@@ -22,6 +23,7 @@ export default class App extends React.Component {
         })
     }
 
+
     render () {
         return(
             <div className="App">
@@ -34,3 +36,5 @@ export default class App extends React.Component {
         )
     }
 }
+
+export default App;
